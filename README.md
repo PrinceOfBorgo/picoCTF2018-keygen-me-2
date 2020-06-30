@@ -39,14 +39,14 @@ Key = "0E6IW8BX07K05LJ8" .
 % halt
 
 
-$ <b>ssh <picoCTF username>@2018shell1.picoctf.com</b>
+$ <b>ssh &lt;picoCTF username&gt;@2018shell1.picoctf.com</b>
 picoCTF{who_n33ds_p4ssw0rds_38dj21}
 Enter your platform password: 
   
 ...
 ...
   
-<picoCTF username>@pico-2018-shell:~$ <b>cd /problems/keygen-me-2_0_ac2a45bc27456d666f2bbb6921829203</b>
-<picoCTF username>@pico-2018-shell:/problems/keygen-me-2_0_ac2a45bc27456d666f2bbb6921829203$ <b>./activate 0E6IW8BX07K00Q9D</b>
+&lt;picoCTF username&gt;@pico-2018-shell:~$ <b>cd /problems/keygen-me-2_0_ac2a45bc27456d666f2bbb6921829203</b>
+&lt;picoCTF username&gt;@pico-2018-shell:/problems/keygen-me-2_0_ac2a45bc27456d666f2bbb6921829203$ <b>./activate 0E6IW8BX07K00Q9D</b>
   <b>Product Activated Successfully: picoCTF{c0n5tr41nt_50lv1nG_15_W4y_f45t3r_783243818}</b>
 </pre>
