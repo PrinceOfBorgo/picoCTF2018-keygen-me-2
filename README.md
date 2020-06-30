@@ -14,7 +14,7 @@ Analyzing `check_valid_key` function, we can find that a valid key must be a str
 
 `validate_key`, instead, checks if the provided key verifies 12 constraints (`key_constraint_01`, ... ,`key_constraint_12`). Each one of these functions sets constraints on some of the characters: each character is converted to an integer value by `ord` function that assignes values `0-9` to digits and `10-35` to letters, some sort of operation is made on them such that adding (or subtracting) these values together and taking the remainder by `36`. The result must be equal to an arbitrary value.
 
-If all the conditions are satisfied, the key is granted to be a valid one and running the program with that key as first argument we will get the flag. Remember that you have to run the program inside the picoCTF online shell or via and `ssh` session.
+If all the conditions are satisfied, the key is granted to be a valid one and running the program with that key as first argument we will get the flag. Remember that you have to run the program inside the picoCTF online shell or through an `ssh` session.
 
 ## Solution
 Since we want to find solutions the satisfy certain constraints, I solved the problem using [constraint programming](https://en.wikipedia.org/wiki/Constraint_programming). In particular I made [this program](https://github.com/PrinceOfBorgo/picoCTF2018-keygen-me-2/blob/master/keygen.pl) in [SWI-Prolog](https://www.swi-prolog.org/) using `clpfd` library that allows to use contraint programming over finite fields. I suppose that the hint of the problem refers to [Z3 Theorem Prover](https://en.wikipedia.org/wiki/Z3_Theorem_Prover) that I don't know, maybe I will study it in the future.
