@@ -12,7 +12,7 @@ In `main()` function there is a call to `check_valid_key()` and `validate_key()`
 
 Analyzing `check_valid_key()` function, we can find that a valid key must be a string of 16 valid characters that are digits from `0` to `9` and capital letters (according to `check_valid_char()` function).
 
-`validate_key()`, instead, checks if the provided key verifies 12 constraints (`key_constraint_01()`, ... ,`key_constraint_12()`). Each one of these functions sets constraints on some of the characters: each character is converted to an integer value by `ord()` function that assignes values `0-9` to digits and `10-35` to letters, some kind of operation is made on them such that adding (or subtracting) these values together and taking the remainder by `36`. The result must be equal to an arbitrary value.
+`validate_key()`, instead, checks if the provided key verifies 12 constraints (`key_constraint_01()`, ... , `key_constraint_12()`). Each one of these functions sets constraints on some of the characters: each character is converted to an integer value by `ord()` function that assignes values `0-9` to digits and `10-35` to letters, some kind of operation is made on them such that adding (or subtracting) these values together and taking the remainder by `36`. The result must be equal to an arbitrary value.
 
 If all the conditions are satisfied, the key is granted to be a valid one and running the program with that key as first argument will give us the flag. Remember that you have to run the program inside the picoCTF online shell or through an `ssh` session.
 
